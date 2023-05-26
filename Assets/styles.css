@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Bruno Ace SC', cursiv;
+}
+
+nav li {
+    border: 3px solid;
+    border-radius: 25px 15px;
+    border-top: none;
+    border-bottom: none;
+}
+
+nav li:hover {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+li a {
+    text-decoration: none;
+}
+
+#image {
+    background-image: linear-gradient(white, grey, white, grey, white, grey);
+    border-radius: 20%;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.none {
+    border: none;
+}
+
+#center {
+    transform: translateY(-280px);
+}
+
+.card {
+    width: 20rem;
+}
+
+/* images */
+#first-pic {
+    height: 200px;
+    width: 150px;
+
+}
+
+#secondpic {
+    height: 200px;
+    width: 150px;
+
+}
+
+#thirdpic {
+    height: 200px;
+    width: 150px;
+
+}
+
+#icon {
+    width: 20px;
+}
+
+input {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder {
+    text-align: center;
+}
+
+#profile {
+    height: 300px;
+    width: 200px;
+}
+
+.playball {
+    font-family: "Bebas Neue";
+    text-transform: uppercase;
+}
+
+.fold {
+    font-family: 'Foldit';
+}
+
+#hover:hover {
+    background-color: aqua;
+}
+
+/* Flip-card */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20%;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20%;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-image: url('./images/Website_gambar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.cardpic {
+    height: 200px;
+    width: 200px;
+}
+
+/* Flip-card End */
+.map {
+    list-style-image: url('./images/icons8-internet-48.png');
+}
+
+.ad {
+    list-style-image: url('./icons/icons8-letter.gif');
+}
+
+#no {
+    list-style-image: url('./icons/icons8-phone.gif');
+}
